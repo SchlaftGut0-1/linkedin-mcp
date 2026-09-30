@@ -1,0 +1,37 @@
+{
+  "name": "linkedin-mcp",
+  "version": "0.1.0",
+  "description": "Local professional profile proposals over MCP; no LinkedIn API access required",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchlaftGut0-1/linkedin-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SchlaftGut0-1/linkedin-mcp/issues"
+  },
+  "homepage": "https://github.com/SchlaftGut0-1/linkedin-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.2.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
